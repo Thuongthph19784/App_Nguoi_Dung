@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.fragmentNguoiDung"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/fragment_nguoiDung_btn_thongTin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:elevation="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Thông tin"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/bo_goc_button"/>
+        <Button
+            android:id="@+id/fragment_nguoiDung_btn_doiMatKhau"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:elevation="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Đổi mật khẩu"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/bo_goc_button"/>
+        <Button
+            android:id="@+id/fragment_nguoiDung_btn_dangXuat"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:elevation="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Đăng xuất"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/bo_goc_button"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

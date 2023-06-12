@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food</string>
+    <string name="tab_1">Trang chủ</string>
+    <string name="tab_2">Yêu thích</string>
+    <string name="tab_3">Hóa đơn</string>
+    <string name="tab_4">Người dùng</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
