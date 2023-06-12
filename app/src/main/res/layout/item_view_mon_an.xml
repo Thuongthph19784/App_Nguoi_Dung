@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="2dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/item_view_mon_an_cardView"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/item_view_mon_an_img"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bo_goc_custom2"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_view_mon_an_ten_mon_an"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tên món ăn:"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/item_view_mon_an_gia_mon_an"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Giá:"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="10dp"
+
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" đ"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="10dp"
+
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

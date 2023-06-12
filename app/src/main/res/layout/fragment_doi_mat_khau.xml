@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.fragmentDoiMatKhau"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="true"
+                android:layout_marginTop="40dp"
+                app:passwordToggleEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_doiMatKhau_edt_matKhauCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu cũ"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="true"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_doiMatKhau_edt_matKhauMoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu mới"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="true"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_doiMatKhau_edt_nhapLai_matKhauMoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập lại mật khẩu mới"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/fragment_doiMatKhau_btn_doiMatKhau"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:elevation="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:text="Đổi mật khẩu"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/bo_goc_button"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
